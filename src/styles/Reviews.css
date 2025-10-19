@@ -1,0 +1,34 @@
+.reviews .title{
+    width: 600px;
+}
+.review{
+    width: 350px;
+}
+.avatar .text{
+    height: 48px;
+    width: 290px;
+}
+.sliderButtons button{
+    padding: 12px;
+    border: 1px solid rgba(44, 44, 44, 1);
+    transition: 0.3s;
+}
+.sliderButtons button path{
+    fill: var(--black2);
+    stroke: var(--black2);
+    transition: 0.3s;
+}
+.sliderButtons button:hover{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.sliderButtons button:hover path{
+    fill: white;
+    stroke: white;
+}
+.testimonal{
+    max-width: 600px;
+}
+.testimonal .absolute{
+    width: -webkit-fill-available;
+}

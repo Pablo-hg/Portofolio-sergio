@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg1: rgba(245, 247, 250, 1);
+  --bg2: rgba(255, 255, 255, 0.65);
+  --black: rgba(26, 26, 26, 1);
+  --border-primary: rgba(243, 91, 28, 1);
+  --primary: rgba(193, 77, 54, 1);
+  --grey: rgba(95, 99, 104, 1);
+  --grey-dark: rgba(108, 108, 108, 1);
+  --black2: rgba(44, 44, 44, 1);
+  --blue: rgba(222, 237, 255, 0.65)
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-medium;
+  src: url(../src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../src/assets/fonts/Inter/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inte-semibold;
+  src: url(../src/assets/fonts/Inter/Inter_18pt-SemiBold.ttf);
+}
+
+body {
+  background-color: var(--bg1);
+  margin: 0;
+}
+
+
+#root {
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: Ubuntu-medium;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--black2);
+}
+
+.header {
+  background-color: var(--blue);
+  border-radius: 16px;
+  color: var(--black);
+}
+
+select.lang {
+  width: 70px;
+  border-bottom: 1px solid var(--grey);
+}
+
+nav {
+  max-width: 826px;
+  width: -webkit-fill-available;
+}
+
+nav a {
+  font-size: 16px;
+  border-bottom: 1px solid;
+  border-color: transparent;
+  transition: 0.3s;
+  font-family: Inter;
+}
+
+nav a:hover {
+  border-color: var(--border-primary);
+}
+
+.name {
+  font-family: Ubuntu-medium;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid transparent !important;
+  color: rgba(60, 64, 67, 1);
+}
+
+p {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey);
+  font-family: Inter;
+}
+
+.banner {
+  background-color: var(--primary);
+  height: 60px;
+  font-family: Inte-semibold;
+  font-size: 18px;
+}
+
+.banner .whitespace-nowrap {
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-family: Ubuntu-medium;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black2);
+  line-height: 105%;
+}
+
+p.desc {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+p.paragraph {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+p.high {
+  font-family: Inte-semibold;
+  font-size: 18px;
+}
+
+p.tags {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.btn-Primary,
+.btn-Secondary {
+  font-family: Inte-semibold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: 2px solid;
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+
+.btn-Primary {
+  background-color: var(--black2);
+  color: white;
+  border-color:var(--black2);
+}
+
+.btn-Primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-Secondary {
+  border-color: var(--black2);
+  color: var(--black2);
+}
+
+.btn-Secondary:hover {
+  border-color: var(--border-primary);
+}
+
+.btn-Secondary span.flecha,
+.btn-Primary span.flecha {
+  top: 18px;
+  left: 25px;
+}
+
+.animate {
+  transition-duration: 0.3s;
+}
+
+
+
+.link {
+  font-family: Inter;
+  font-size: 16px;
+  color: rgba(60, 64, 67, 1);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
