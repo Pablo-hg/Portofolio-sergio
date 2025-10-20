@@ -3,7 +3,7 @@ import ImagenFlyers from '../assets/img/ImagenFlyers.png';
 import ImagenLata from '../assets/img/ImagenLata.png';
 import ImagenPusher from '../assets/img/ImagenPusher.png';
 
-export const designs = [
+export const designsData = [
   {
     id: 1,
     urlImage: ImagenPusher,

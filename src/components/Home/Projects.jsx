@@ -1,4 +1,4 @@
-import { projects } from '../../data/projects';
+import { projectsData } from '../../data/projects';
 import '../../styles/Projects.css';
 import Card from '../Card';
 
@@ -9,10 +9,10 @@ const Projects = () => (
       Cada proyecto cuenta un reto distinto: aquí comparto cómo los abordé y qué aprendí en el proceso.
     </p>
 
-    {projects.map((project, i) => (
+    {projectsData.map((project, i) => (
       <div key={project.id || i}>
         <Card {...project} />
-        {i !== projects.length - 1 && <hr className="my-12" />}
+        {i !== projectsData.length - 1 && <hr className="my-12" />}
       </div>
     ))}
   </section>

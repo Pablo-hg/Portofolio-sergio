@@ -1,4 +1,4 @@
-import { designs } from '../../data/designs';
+import { designsData } from '../../data/designs';
 import '../../styles/Projects.css';
 import Card from '../Card';
 
@@ -9,10 +9,10 @@ const Designs = () => (
       Proyectos de diseño visual, gráfico y experimental donde exploré estilos, composición y branding.
     </p>
 
-    {designs.map((design, i) => (
+    {designsData.map((design, i) => (
       <div key={design.id || i}>
         <Card {...design} />
-        {i !== designs.length - 1 && <hr className="my-12" />}
+        {i !== designsData.length - 1 && <hr className="my-12" />}
       </div>
     ))}
   </section>

@@ -4,7 +4,7 @@ import LogoRoadstr from '../assets/img/Logo_Roadstr.png';
 import LogoIberdrola from '../assets/img/LogoIberdrola.png';
 import LogoSesh from '../assets/img/LogoSesh.png';
 
-export const projects = [
+export const projectsData = [
   {
     id: 1,
     urlImage: ImagenIberdrola,

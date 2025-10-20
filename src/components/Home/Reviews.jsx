@@ -1,37 +1,8 @@
 import { useState } from "react";
+import { reviewsData } from "../../data/reviews";
 import '../../styles/Reviews.css';
 import TestimonialCard from "./TestimonialCard";
 
-const reviewsData = [
-  {
-    logo: "/src/assets/img/LogoGaraje.png",
-    text: "He tenido la suerte de trabajar con Sergio durante más de un año y medio y, desde el primer día, me hizo sentir acogida en el equipo. A pesar de su juventud, Sergio ya cuenta con una amplia experiencia y trabajar con él me permitió aprender tanto de su visión del diseño como de su carácter colaborador y empático.",
-    avatar: "/src/assets/img/ReviewAvatar1.png",
-    name: "Cris Montes",
-    role: "Product Designer en Mutua Madrileña",
-  },
-  {
-    logo: "/src/assets/img/LogoSesh.png",
-    text: "Sergio es un profesional del diseño con mucho potencial. Comenzó como becario de UX/UI Designer y fue promovido a Junior gracias a su esfuerzo y adaptabilidad. Tiene gran atención al detalle y motivación constante por crecer.",
-    avatar: "/src/assets/img/ReviewAvatar2.png",
-    name: "Verónica Serrat",
-    role: "Product Designer en Sesh",
-  },
-  {
-    logo: "/src/assets/img/LogoGaraje.png",
-    text: "He tenido la suerte de trabajar con Sergio durante más de un año y medio y, desde el primer día, me hizo sentir acogida en el equipo. A pesar de su juventud, Sergio ya cuenta con una amplia experiencia y trabajar con él me permitió aprender tanto de su visión del diseño como de su carácter colaborador y empático.",
-    avatar: "/src/assets/img/ReviewAvatar1.png",
-    name: "Cris Montes",
-    role: "Product Designer en Mutua Madrileña",
-  },
-  {
-    logo: "/src/assets/img/LogoSesh.png",
-    text: "Sergio es un profesional del diseño con mucho potencial. Comenzó como becario de UX/UI Designer y fue promovido a Junior gracias a su esfuerzo y adaptabilidad. Tiene gran atención al detalle y motivación constante por crecer.",
-    avatar: "/src/assets/img/ReviewAvatar2.png",
-    name: "Verónica Serrat",
-    role: "Product Designer en Sesh",
-  },
-];
 
 export default function Reviews() {
   const [current, setCurrent] = useState(0);
