@@ -1,7 +1,7 @@
-import LogoGaraje from '../assets/img/LogoGaraje.png';
-import LogoSesh from '../assets/img/LogoSesh.png';
-import ReviewAvatar1 from '../assets/img/ReviewAvatar1.png';
-import ReviewAvatar2 from '../assets/img/ReviewAvatar2.png';
+import LogoGaraje from '../assets/img/logos/logoGaraje.png';
+import LogoSesh from '../assets/img/logos/logoSesh.png';
+import ReviewAvatar1 from '../assets/img/reviewAvatar1.png';
+import ReviewAvatar2 from '../assets/img/reviewAvatar2.png';
 
 
 export const reviewsData = [

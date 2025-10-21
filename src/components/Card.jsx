@@ -1,4 +1,4 @@
-import DefaultImage from '../assets/img/Image.png'; // fallback
+import DefaultImage from '../assets/img/bg/bgDefault.png';
 import Button from '../components/Button';
 
 export default function Card({
