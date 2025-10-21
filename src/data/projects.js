@@ -1,5 +1,5 @@
-import DefaultImage from '../assets/img/bg/bgDefault.png'; // fallback opcional
-import ImagenIberdrola from '../assets/img/bg/bgIberdrola1.png';
+import DefaultImage from '../assets/img/bg/bgDefault.webp'; // fallback opcional
+import ImagenIberdrola from '../assets/img/bg/bgIberdrola1.webp';
 import LogoIberdrola from '../assets/img/logos/logoIberdrola.png';
 import LogoRoadstr from '../assets/img/logos/logoRoadstr.png';
 import LogoSesh from '../assets/img/logos/logoSesh.png';

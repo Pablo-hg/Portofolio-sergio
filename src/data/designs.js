@@ -1,7 +1,7 @@
 // src/data/designs.js
-import ImagenFlyers from '../assets/img/bg/bgFlyers.png';
-import ImagenLata from '../assets/img/bg/bgLata.png';
-import ImagenPusher from '../assets/img/bg/bgPusher.png';
+import ImagenFlyers from '../assets/img/bg/bgFlyers.webp';
+import ImagenLata from '../assets/img/bg/bgLata.webp';
+import ImagenPusher from '../assets/img/bg/bgPusher.webp';
 
 export const designsData = [
   {

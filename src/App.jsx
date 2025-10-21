@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="px-12">
+      <main>
         <Routes>
           <Route  path='/' element={<Home />}/>
           <Route path='/case-studies' element={<CaseStudies />}/>
