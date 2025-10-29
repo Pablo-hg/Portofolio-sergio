@@ -1,4 +1,4 @@
-import '../../styles/Hello.css';
+import '../../styles/Home.css';
 import Button from '../Button';
 
 const MyProjects = () => (

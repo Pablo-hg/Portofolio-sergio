@@ -1,34 +1,53 @@
-.reviews .title{
-    width: 600px;
+.reviews .title {
+    width: 550px;
 }
-.review{
-    width: 350px;
+
+.review {
+    width: 415px;
+    padding: 32px;
 }
-.avatar .text{
+
+.avatar .text {
     height: 48px;
     width: 290px;
 }
-.sliderButtons button{
+
+.sliderButtons button {
     padding: 12px;
-    border: 1px solid rgba(44, 44, 44, 1);
+    border: 1px solid var(--color-accent-secondary);
     transition: 0.3s;
 }
-.sliderButtons button path{
-    fill: var(--black2);
-    stroke: var(--black2);
+
+.sliderButtons button path {
+    fill: var(--color-accent-secondary);
+    stroke: var(--color-accent-secondary);
     transition: 0.3s;
 }
-.sliderButtons button:hover{
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
+
+.sliderButtons button:hover {
+    background-color: var(--color-accent-primary-hover);
+    border: 1px solid var(--color-accent-primary-hover);
 }
-.sliderButtons button:hover path{
+
+.sliderButtons button:hover path {
     fill: white;
     stroke: white;
 }
-.testimonal{
-    max-width: 600px;
+
+.testimonal {
+    max-width: 525px;
 }
-.testimonal .absolute{
+
+.testimonal .absolute {
     width: -webkit-fill-available;
+}
+
+.review .text .name {
+    font: var(--font-body-highlight);
+    color: var(--color-text-heading-strong);
+}
+
+.review .text .info {
+    font: var(--font-ui-tags);
+    color: var(--color-text-description);
 }

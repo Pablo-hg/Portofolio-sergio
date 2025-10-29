@@ -7,7 +7,7 @@ export default function Button({ children, className = "", href = "#", txt = "" 
   const ref = useRef(null);
   const [baseWidth, setBaseWidth] = useState(null);
 
-  const color = (className == 'btn-Primary') ? 'white' : 'var(--border-primary)';
+  const color = (className == 'btn-Primary') ? 'white' : 'var(--color-border-hover)';
 
   const handleMouseEnter = () => {
     if (!ref.current) return;

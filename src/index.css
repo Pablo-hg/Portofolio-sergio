@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root {
-  --bg1: rgba(245, 247, 250, 1);
-  --bg2: rgba(255, 255, 255, 0.65);
-  --black: rgba(26, 26, 26, 1);
-  --border-primary: rgba(243, 91, 28, 1);
-  --primary: rgba(193, 77, 54, 1);
-  --grey: rgba(95, 99, 104, 1);
-  --grey-dark: rgba(108, 108, 108, 1);
-  --black2: rgba(44, 44, 44, 1);
-  --blue: rgba(222, 237, 255, 0.65)
-}
-
 @font-face {
   font-family: Ubuntu;
   src: url(../src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
@@ -31,15 +18,152 @@
 }
 
 @font-face {
-  font-family: Inte-semibold;
+  font-family: Inter-semibold;
   src: url(../src/assets/fonts/Inter/Inter_18pt-SemiBold.ttf);
 }
 
-body {
-  background-color: var(--bg1);
-  margin: 0;
+@font-face {
+  font-family: Inter-medium;
+  src: url(../assets/fonts/Inter/Inter_18pt-Medium.ttf);
 }
 
+:root {
+  /* === color / bg === */
+  --color-bg-base: #ffffff;
+  --color-bg-surface: #f9f9f9;
+  --color-bg-overlay: rgba(255 255 255 / 0.9);
+  /* ≈ #FFFFFFE6 */
+  --color-bg-neutral-light: #f3f4f6;
+
+  /* === color / bg / header === */
+  --color-bg-header: #f5f7fa;
+  --color-bg-primary: #f5f7fa;
+  --color-bg-green: #e7fcc5;
+  --color-bg-blue: #deedff;
+  --color-bg-grey: #f5f6f7;
+
+  /* === color / text === */
+  --color-text-base: #1a1a1a;
+  --color-text-heading-strong: #2c2c2c;
+  --color-text-heading-subtle: #3c4043;
+  --color-text-body: #1a1a1a;
+  --color-text-description: #5f6368;
+  --color-text-muted: #6c6c6c;
+  --color-text-inverse: #ffffff;
+  --color-text-link: #1a1a1a;
+  --color-text-link-hover: #000000;
+
+  /* === color / accent === */
+  --color-accent-primary: #c14d36;
+  --color-accent-primary-hover: #a93f2d;
+  --color-accent-secondary: #2c2c2c;
+  --color-accent-neutral: #ededed;
+
+  /* === color / border === */
+  --color-border-main: #e2e2e2;
+  --color-border-default: #e5e5e5;
+  --color-border-hover: #f35b1c;
+  --color-border-muted: #f3f4f6;
+
+  /* === color / state === */
+  --color-state-success: #4ade80;
+  --color-state-error: #ef4444;
+  --color-state-info: #3b82f6;
+
+  /* === Body === */
+  --font-body-paragraph: 18px/150% 'Inter', sans-serif;
+  --font-body-highlight: 18px/150% 'Inter-semibold', sans-serif;
+  --font-body-description: 16px/150% 'Inter', sans-serif;
+  --font-body-highlight-small: 16px 'Inter-semibold', sans-serif;
+  --font-body-muted: 12px/ 'Inter-medium', sans-serif;
+  --font-body-small: 14px/150% 'Inter', sans-serif;
+
+  /* === UI === */
+  --font-ui-buttons: 16px/120% 'Inter-semibold', sans-serif;
+  --font-ui-tags: 14px/120% 'Inter', sans-serif;
+
+  /* === Link === */
+  --font-link-cta: 100 16px 'Inter', sans-serif;
+  --font-link-cta-hover: 16px 'Inter-semibold', sans-serif;
+}
+
+/* HEADER */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu-medium;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: auto;
+}
+
+/* === BODY === */
+.text-paragraph {
+  font: var(--font-body-paragraph);
+}
+
+.text-highlight {
+  font: var(--font-body-highlight);
+}
+
+.text-description {
+  font: var(--font-body-description);
+  color: var(--color-text-description);
+}
+
+.text-highlight-small {
+  font: var(--font-body-highlight-small);
+}
+
+.text-muted {
+  font: var(--font-body-muted);
+}
+
+/* === UI === */
+.text-button {
+  font: var(--font-ui-buttons);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-text-inverse);
+}
+
+
+/* === LINKS === */
+.text-cta {
+  font: var(--font-link-cta);
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+.text-cta:hover {
+  font: var(--font-link-cta-hover);
+  color: var(--color-text-link-hover);
+}
+
+/* ------------------------------------------------------------------- */
+body {
+  background-color: var(--color-bg-base);
+}
 
 #root {
   max-width: 1184px;
@@ -47,150 +171,102 @@ body {
   text-align: center;
 }
 
-h2 {
-  font-family: Ubuntu-medium;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 120%;
-  color: var(--black2);
-}
-
-.header {
-  background-color: var(--blue);
+/* -----------------------------HEADER-------------------------------------- */
+header {
+  background-color: #DEEDFF;
   border-radius: 16px;
-  color: var(--black);
+  color: var(--color-text-link);
 }
 
-select.lang {
-  width: 70px;
-  border-bottom: 1px solid var(--grey);
-}
-
-nav {
+header nav {
   max-width: 826px;
   width: -webkit-fill-available;
 }
 
-nav a {
-  font-size: 16px;
+header select.lang {
+  width: 70px;
+  border-bottom: 1px solid var(--color-text-description);
+}
+
+header nav a {
   border-bottom: 1px solid;
   border-color: transparent;
   transition: 0.3s;
-  font-family: Inter;
 }
 
-nav a:hover {
-  border-color: var(--border-primary);
-}
-
-.name {
+header .name {
+  color: var(--color-text-heading-subtle);
   font-family: Ubuntu-medium;
   font-size: 24px;
-  font-weight: 500;
-  border-bottom: 1px solid transparent !important;
-  color: rgba(60, 64, 67, 1);
-}
-
-p {
-  font-size: 18px;
   line-height: 150%;
-  color: var(--grey);
-  font-family: Inter;
 }
 
-.banner {
-  background-color: var(--primary);
-  height: 60px;
-  font-family: Inte-semibold;
-  font-size: 18px;
+header nav a:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text-link-hover);
 }
 
-.banner .whitespace-nowrap {
-  height: -webkit-fill-available;
-  display: flex;
-  align-items: center;
-}
+/* -----------------------------HEADER-------------------------------------- */
 
-h3 {
+/* -----------------------------FOOTER-------------------------------------- */
+footer .name {
+  color: var(--color-text-heading-subtle);
   font-family: Ubuntu-medium;
   font-size: 24px;
-  font-weight: 500;
-  color: var(--black2);
-  line-height: 105%;
-}
-
-p.desc {
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 150%;
-  color: var(--grey);
-}
-
-p.paragraph {
-  font-family: Inter;
-  font-size: 18px;
   line-height: 150%;
 }
 
-p.high {
-  font-family: Inte-semibold;
-  font-size: 18px;
+footer select.lang {
+  width: 70px;
+  border-bottom: 1px solid var(--color-text-description);
 }
 
-p.tags {
-  font-family: Inter;
-  font-size: 14px;
-  line-height: 120%;
+footer .more {
+  font: var(--font-body-small);
+  color: var(--color-text-description);
 }
+
+/* -----------------------------FOOTER-------------------------------------- */
+
+/* -----------------------------BOTONES-------------------------------------- */
 
 .btn-Primary,
 .btn-Secondary {
-  font-family: Inte-semibold;
-  font-size: 16px;
+  font: var(--font-ui-buttons);
   padding: 12px 24px;
   border-radius: 24px;
   border: 2px solid;
   transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
 
+.flecha.animate {
+  transition: opacity 0.3s ease-in;
+}
 
 .btn-Primary {
-  background-color: var(--black2);
   color: white;
-  border-color:var(--black2);
+  background-color: var(--color-accent-secondary);
+  border-color: var(--color-accent-secondary);
 }
 
 .btn-Primary:hover {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--color-accent-primary);
+  border-color: var(--color-accent-primary);
 }
+
 .btn-Secondary {
-  border-color: var(--black2);
-  color: var(--black2);
+  border-color: var(--color-text-body);
+  color: var(--color-text-body);
 }
 
 .btn-Secondary:hover {
-  border-color: var(--border-primary);
+  border-color: var(--color-border-hover);
 }
 
 .btn-Secondary span.flecha,
 .btn-Primary span.flecha {
-  top: 18px;
-  left: 25px;
+  top: 16px;
+  left: 23px;
 }
 
-.animate {
-  transition-duration: 0.3s;
-}
-
-
-
-.link {
-  font-family: Inter;
-  font-size: 16px;
-  color: rgba(60, 64, 67, 1);
-}
-
-.bg-primary {
-  background-color: var(--primary);
-}
+/* -----------------------------BOTONES-------------------------------------- */

@@ -1,3 +1,5 @@
+import '../../styles/Home.css';
+
 const Banner = ({ repeat = 5 }) => {
   const items = [
     '+4 años de experiencia',
@@ -14,8 +16,8 @@ const Banner = ({ repeat = 5 }) => {
   );
 
   return (
-    <div className="absolute left-0 overflow-hidden w-full banner mt-12 bg-[#C14E36] text-white py-2">
-      <div className="whitespace-nowrap animate-banner">{repeatedContent}</div>
+    <div className="absolute left-0 overflow-hidden w-full banner mt-12 bg-[--color-accent-primary]  py-2">
+      <div className="whitespace-nowrap animate-banner text-highlight text-[--color-text-inverse]">{repeatedContent}</div>
       <style>{`
         @keyframes banner {
           0% { transform: translateX(0); }

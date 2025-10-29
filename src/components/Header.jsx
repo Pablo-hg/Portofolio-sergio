@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="backdrop-blur-md sticky top-4 z-50 header px-24 py-4">
             <div className="flex items-center justify-between">
-                <nav className="flex items-center justify-between">
+                <nav className="flex items-center justify-between text-description">
                     <NavLink className={"name"} to="/">Sergio DM</NavLink>
                     <NavLink to="/case-studies">Case Studies</NavLink>
                     <NavLink to="/about-me">Sobre Mi</NavLink>
