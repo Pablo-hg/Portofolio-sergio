@@ -1,7 +1,7 @@
-import LogoB from '../assets/img/logos/logoB.png';
-import logoCeu from '../assets/img/logos/logoCeu.png';
+import LogoB from '../assets/img/logos/LogoB.png';
+import LogoCeu from '../assets/img/logos/LogoCeu.png';
 import LogoFp from '../assets/img/logos/LogoFp.png';
-import logoUi from '../assets/img/logos/logoUi.png';
+import LogoUi from '../assets/img/logos/LogoUi.png';
 
 import BrashIcon from '../assets/svg/BrashIcon.svg';
 import CodeIcon from '../assets/svg/CodeIcon.svg';
@@ -21,7 +21,7 @@ export const learningsData = [
   },
   {
     id: 2,
-    urlImage: logoUi,
+    urlImage: LogoUi,
     dateStarted: "2023",
     dateEnded: "",
     title: 'Certificado en UI Creativo',
@@ -41,7 +41,7 @@ export const learningsData = [
   },
   {
     id: 4,
-    urlImage: logoCeu,
+    urlImage: LogoCeu,
     dateStarted: "2020",
     dateEnded: "2022",
     title: 'Grado Superior en Desarrollo de Aplicaciones Web',
@@ -61,7 +61,7 @@ export const learningsData = [
   },
   {
     id: 6,
-    urlImage: logoCeu,
+    urlImage: LogoCeu,
     dateStarted: "2016",
     dateEnded: "2018",
     title: 'Grado Medio en Sistemas Microinformáticos y Redes',

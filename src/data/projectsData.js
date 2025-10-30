@@ -1,8 +1,8 @@
 import DefaultImage from '../assets/img/bg/bgDefault.webp'; // fallback opcional
 import ImagenIberdrola from '../assets/img/bg/bgIberdrola1.webp';
-import LogoIberdrola from '../assets/img/logos/logoIberdrola.png';
-import LogoRoadstr from '../assets/img/logos/logoRoadstr.png';
-import LogoSesh from '../assets/img/logos/logoSesh.png';
+import LogoIberdrola from '../assets/img/logos/LogoIberdrola.png';
+import LogoRoadstr from '../assets/img/logos/LogoRoadstr.png';
+import LogoSesh from '../assets/img/logos/LogoSesh.png';
 
 export const projectsData = [
   {
