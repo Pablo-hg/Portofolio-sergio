@@ -1,7 +1,7 @@
 import DefaultImage from '../assets/img/bg/bgDefault.webp';
 import Button from '../components/Button';
 
-export default function Card({
+export default function CardInfo({
   className = '',
   urlImage = '',
   urlLogo = '',

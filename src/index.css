@@ -285,16 +285,3 @@ footer .more {
 .animate-fade-up {
     animation: fade-up 0.8s ease-out forwards;
 }
-
-.itsme img{
-  max-height: 656px;
-}
-.itsme .hola{
-  width: 50%;
-}
-.itsme .name{
-  max-width: 402px;
-}
-.myway{
-  max-width: 768px;
-}

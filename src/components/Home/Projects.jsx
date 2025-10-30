@@ -1,6 +1,6 @@
-import { projectsData } from '../../data/projects';
+import { projectsData } from '../../data/projectsData';
 import '../../styles/Projects.css';
-import Card from '../Card';
+import CardCase from '../CardCase';
 
 const Projects = () => (
   <section className="text-left projects mt-12">
@@ -11,7 +11,7 @@ const Projects = () => (
 
     {projectsData.map((project, i) => (
       <div key={project.id || i}>
-        <Card {...project} />
+        <CardCase {...project} />
         {i !== projectsData.length - 1 && <hr className="my-12" />}
       </div>
     ))}

@@ -1,6 +1,6 @@
-import { designsData } from '../../data/designs';
+import { designsData } from '../../data/designsData';
 import '../../styles/Projects.css';
-import Card from '../Card';
+import CardCase from '../CardCase';
 
 const Designs = () => (
   <section className="pt-44 text-left design">
@@ -11,7 +11,7 @@ const Designs = () => (
 
     {designsData.map((design, i) => (
       <div key={design.id || i}>
-        <Card {...design} />
+        <CardCase {...design} />
         {i !== designsData.length - 1 && <hr className="my-12" />}
       </div>
     ))}
