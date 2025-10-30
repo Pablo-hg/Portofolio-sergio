@@ -1,4 +1,3 @@
-import TextExpand from "./TextExpand";
 
 export default function TestimonialCard({ logo, text, avatar, name, role }) {
   return (
@@ -6,19 +5,20 @@ export default function TestimonialCard({ logo, text, avatar, name, role }) {
       {/* Logo empresa */}
       <img className="mb-5" src={logo} alt={`Logo ${name}`} />
 
-      {/* Texto expandible */}
-      <TextExpand text={text} />
+      <div className="w-auto">
+        <p className="text-description line-clamp-4">{text}</p>
+      </div>
 
       {/* Avatar y datos */}
-      <div className="avatar items-center">
+      <div className="avatar items-center mt-6">
         <img
           className="w-12 h-12 mr-4 rounded-full object-cover"
           src={avatar}
           alt={`Foto de ${name}`}
         />
         <div className="text">
-          <p className="high">{name}</p>
-          <p className="tags">{role}</p>
+          <p className="name">{name}</p>
+          <p className="info">{role}</p>
         </div>
       </div>
     </div>
