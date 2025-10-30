@@ -1,12 +1,13 @@
-import LogoB from '../assets/img/logos/LogoB.png';
-import LogoCeu from '../assets/img/logos/LogoCeu.png';
-import LogoFp from '../assets/img/logos/LogoFp.png';
-import LogoUi from '../assets/img/logos/LogoUi.png';
+import LogoB from '@/assets/img/logos/LogoB.png';
+import LogoCeu from '@/assets/img/logos/LogoCeu.png';
+import LogoFp from '@/assets/img/logos/LogoFp.png';
+import LogoUi from '@/assets/img/logos/LogoUi.png';
 
-import BrashIcon from '../assets/svg/BrashIcon.svg';
-import CodeIcon from '../assets/svg/CodeIcon.svg';
-import GradIcon from '../assets/svg/GradIcon.svg';
-import WireIcon from '../assets/svg/WireIcon.svg';
+import BrashIcon from '@/assets/svg/BrashIcon.svg';
+import CodeIcon from '@/assets/svg/CodeIcon.svg';
+import GradIcon from '@/assets/svg/GradIcon.svg';
+import WireIcon from '@/assets/svg/WireIcon.svg';
+
 
 export const learningsData = [
   {
