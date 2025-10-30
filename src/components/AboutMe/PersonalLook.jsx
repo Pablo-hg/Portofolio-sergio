@@ -10,11 +10,11 @@ const MyProjects = () => (
         <p className="text-description mt-6">
             Momentos, pasiones y detalles fuera del trabajo que también inspiran mi forma de diseñar.
         </p>
-        <div class="grid grid-cols-2 gap-8 mt-8">
-            <img src={bgSergio2} class="rounded-2xl object-cover w-full h-full row-span-2" />
-            <img src={bgCastillo} class="rounded-2xl object-cover w-full h-full" />
-            <img src={bgComida} class="rounded-2xl object-cover w-full h-full row-span-2" />
-            <img src={bgValencia} class="rounded-2xl object-cover w-full h-full" />
+        <div className="grid grid-cols-2 gap-8 mt-8">
+            <img src={bgSergio2} className="rounded-2xl object-cover w-full h-full row-span-2" />
+            <img src={bgCastillo} className="rounded-2xl object-cover w-full h-full" />
+            <img src={bgComida} className="rounded-2xl object-cover w-full h-full row-span-2" />
+            <img src={bgValencia} className="rounded-2xl object-cover w-full h-full" />
             
         </div>
 
