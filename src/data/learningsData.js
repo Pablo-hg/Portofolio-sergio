@@ -1,7 +1,7 @@
-import LogoB from '@/assets/img/logos/LogoB.png';
-import LogoCeu from '@/assets/img/logos/LogoCeu.png';
-import LogoFp from '@/assets/img/logos/LogoFp.png';
-import LogoUi from '@/assets/img/logos/LogoUi.png';
+import LogoB from '@/assets/img/logos/LogoB.webp';
+import LogoCeu from '@/assets/img/logos/LogoCeu.webp';
+import LogoFp from '@/assets/img/logos/LogoFp.webp';
+import LogoUi from '@/assets/img/logos/LogoUi.webp';
 
 import BrashIcon from '@/assets/svg/BrashIcon.svg';
 import CodeIcon from '@/assets/svg/CodeIcon.svg';

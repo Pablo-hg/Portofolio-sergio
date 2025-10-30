@@ -1,6 +1,6 @@
-import logoGaraje from '../assets/img/logos/LogoGaraje.png';
-import LogoRoadstr from '../assets/img/logos/LogoRoadstr.png';
-import logoSesh from '../assets/img/logos/LogoSesh.png';
+import logoGaraje from '../assets/img/logos/LogoGaraje.webp';
+import LogoRoadstr from '../assets/img/logos/LogoRoadstr.webp';
+import logoSesh from '../assets/img/logos/LogoSesh.webp';
 
 import CarIcon from '../assets/svg/CarIcon.svg';
 import SingIcon from '../assets/svg/SingIcon.svg';
