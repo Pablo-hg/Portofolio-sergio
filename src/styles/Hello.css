@@ -9,7 +9,7 @@ h1{
     color: var(--primary) !important;
 }
 .hello{
-    max-width: 720px;
+    max-width: 640px;
 }
 .skills{
     max-width: 480px;

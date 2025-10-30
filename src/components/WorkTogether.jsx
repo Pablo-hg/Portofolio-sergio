@@ -1,5 +1,5 @@
-import '../../styles/Hello.css';
-import Button from '../Button';
+import '../styles/Hello.css';
+import Button from './Button';
 
 const MyProjects = () => (
     <section className="py-36 worktohether w-full">

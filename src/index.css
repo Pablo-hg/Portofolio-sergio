@@ -194,3 +194,20 @@ p.tags {
 .bg-primary {
   background-color: var(--primary);
 }
+
+
+
+/* SOBRE MI */
+
+.itsme img{
+  max-height: 656px;
+}
+.itsme .hola{
+  width: 50%;
+}
+.itsme .name{
+  max-width: 402px;
+}
+.myway{
+  max-width: 768px;
+}
