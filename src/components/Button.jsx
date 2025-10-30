@@ -7,22 +7,25 @@ export default function Button({ children, className = "", href = "#", txt = "" 
   const ref = useRef(null);
   const [baseWidth, setBaseWidth] = useState(null);
 
-  const color = (className == 'btn-Primary') ? 'white' : 'var(--color-border-hover)';
+  const color = className === 'btn-Primary' ? 'white' : 'var(--color-border-hover)';
 
   const handleMouseEnter = () => {
     if (!ref.current) return;
 
-    // Si no hay baseWidth guardado aún, lo guardamos
-    if (!baseWidth) {
-      setBaseWidth(ref.current.offsetWidth);
+    // Usa getBoundingClientRect para obtener un ancho con decimales
+    const currentWidth = ref.current.getBoundingClientRect().width;
+
+    // Si no hay baseWidth guardado aún, lo guardamos con decimales
+    if (baseWidth === null) {
+      setBaseWidth(currentWidth);
     }
 
     // Cancela cualquier animación anterior
     controls.stop();
 
-    // Anima a +30px respecto al ancho original
+    // Anima a +30px respecto al ancho original (manteniendo decimales)
     controls.start({
-      width: (baseWidth || ref.current.offsetWidth) + 30,
+      width: (baseWidth ?? currentWidth) + 30,
       transition: { duration: 0.3, ease: "easeInOut" },
     });
   };
@@ -30,12 +33,14 @@ export default function Button({ children, className = "", href = "#", txt = "" 
   const handleMouseLeave = () => {
     if (!ref.current) return;
 
+    const currentWidth = ref.current.getBoundingClientRect().width;
+
     // Cancela animaciones anteriores
     controls.stop();
 
-    // Vuelve al ancho original (no lo recalcula)
+    // Vuelve al ancho original
     controls.start({
-      width: baseWidth || ref.current.offsetWidth,
+      width: baseWidth ?? currentWidth,
       transition: { duration: 0.3, ease: "easeInOut" },
     });
   };

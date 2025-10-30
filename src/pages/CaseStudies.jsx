@@ -1,14 +1,13 @@
 import Designs from "../components/CaseStudies/Designs";
-import MyProjects from "../components/CaseStudies/Info";
+import InfoCase from "../components/CaseStudies/InfoCase";
 import Projects from "../components/Home/Projects";
 import WorkTogether from "../components/WorkTogether";
-import '../styles/CaseStudies.css';
 
 function CaseStudies() {
 
     return (
         <>
-        <MyProjects />
+        <InfoCase />
         <Projects />
         <Designs />
         <WorkTogether />

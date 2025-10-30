@@ -3,7 +3,7 @@ import WebIcon from "../../assets/svg/WebIcon.svg";
 import WorkIcon from "../../assets/svg/WorkIcon.svg";
 
 const Info = () => (
-  <section className="py-52 grid grid-cols-1 md:grid-cols-3 gap-12 info">
+  <section className="pb-20 grid grid-cols-1 md:grid-cols-3 gap-12 in mt-36">
     <div className="flex flex-col items-start">
       <span className="mb-6">
         <img src={DesignIcon} alt="DesignIcon" />

@@ -1,4 +1,3 @@
-import '../../styles/Home.css';
 
 const Hello = () => (
     <section className="py-36 flex flex-col md:flex-row justify-between items-start md:items-center min-h-[250px]">
@@ -23,7 +22,7 @@ const Hello = () => (
                 ].map((texto) => (
                     <li
                         key={texto}
-                        className="relative pb-3 mb-5 overflow-hidden border-b-2 border-[--color-text-link] hover:border-[--color-border-hover] cursor-pointer group animate text-cta"
+                        className="relative pb-3 mb-5 overflow-hidden border-b-2 border-[--color-text-link] hover:border-[--color-border-hover] cursor-pointer group text-cta animate"
                     >
                         {/* Flecha */}
                         <span
@@ -46,6 +45,12 @@ const Hello = () => (
                 ))}
             </ul>
         </div>
+        <style>{`
+        .skills .animate {
+    transition: 0.6s;
+}
+}
+      `}</style>
     </section>
 );
 

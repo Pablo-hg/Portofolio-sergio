@@ -1,5 +1,5 @@
 import BgSergioNegro from '../../assets/img/bg/bgSergioNegro.webp';
-import '../../styles/Hello.css';
+
 
 const MyProjects = () => (
     <section className="itsme flex items-center justify-center py-36">

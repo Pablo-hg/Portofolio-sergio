@@ -1,4 +1,3 @@
-import '../../styles/Home.css';
 
 const Banner = ({ repeat = 5 }) => {
   const items = [
@@ -16,8 +15,8 @@ const Banner = ({ repeat = 5 }) => {
   );
 
   return (
-    <div className="absolute left-0 overflow-hidden w-full banner mt-12 bg-[--color-accent-primary]  py-2">
-      <div className="whitespace-nowrap animate-banner text-highlight text-[--color-text-inverse]">{repeatedContent}</div>
+    <div className="absolute left-0 overflow-hidden w-full banner bg-[--color-accent-primary] py-4">
+      <div className="whitespace-nowrap flex animate-banner text-highlight text-[--color-text-inverse]">{repeatedContent}</div>
       <style>{`
         @keyframes banner {
           0% { transform: translateX(0); }
@@ -26,7 +25,7 @@ const Banner = ({ repeat = 5 }) => {
         .animate-banner {
           display: inline-block;
           min-width: 200%;
-          animation: banner 20s linear infinite;
+          animation: banner 30s linear infinite;
         }
       `}</style>
     </div>

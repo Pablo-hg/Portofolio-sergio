@@ -1,12 +1,10 @@
-
-import '../styles/Hello.css';
 import Button from './Button';
 
 const MyProjects = () => (
     <section className="py-36 worktohether w-full">
-        <div className="mx-auto info">
-            <h2>💡¿Trabajamos juntos? </h2>
-            <p className="my-6 desc">
+        <div className="mx-auto w-[768px]">
+            <h2 className='text-[--color-text-heading-strong]'>💡¿Trabajamos juntos? </h2>
+            <p className="my-6 text-paragraph text-[--color-text-description]">
                 Estoy abierto a nuevas oportunidades, proyectos interesantes o simplemente a charlar sobre diseño y producto. Puedes escribirme directamente por correo o conectar conmigo en LinkedIn.
             </p>
         </div>

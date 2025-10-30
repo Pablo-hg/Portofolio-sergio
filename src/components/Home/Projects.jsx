@@ -3,8 +3,8 @@ import '../../styles/Projects.css';
 import Card from '../Card';
 
 const Projects = () => (
-  <section className="text-left projects">
-    <h2 className='text-[--color-text-heading-strong]'>📂Mis proyectos destacados</h2>
+  <section className="text-left projects mt-12">
+    <h2 className='text-[--color-text-heading-strong]'>📱 Producto & Diseño UX/UI</h2>
     <p className="mt-6 mb-12 text-description">
       Cada proyecto cuenta un reto distinto: aquí comparto cómo los abordé y qué aprendí en el proceso.
     </p>

@@ -4,8 +4,8 @@ import Card from '../Card';
 
 const Designs = () => (
   <section className="pt-44 text-left design">
-    <h2>🖌️ Visual & Graphic Design</h2>
-    <p className="mt-6 mb-12 desc">
+    <h2 className='text-[--color-text-heading-strong]'>🖌️ Visual & Graphic Design</h2>
+    <p className="mt-6 mb-12 text-description">
       Proyectos de diseño visual, gráfico y experimental donde exploré estilos, composición y branding.
     </p>
 

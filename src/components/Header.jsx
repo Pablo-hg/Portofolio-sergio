@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
+    
     return (
-        <header className="backdrop-blur-md sticky top-4 z-50 header px-24 py-4">
+         <header className={`backdrop-blur-lg sticky top-4 z-50 header px-24 py-4`}>
             <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between text-description">
                     <NavLink className={"name"} to="/">Sergio DM</NavLink>
