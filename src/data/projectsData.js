@@ -13,7 +13,7 @@ export const projectsData = [
     tags: ['Energía', 'B2B', 'Web & APP'],
     title: 'UX/UI en web y app para varios mercados europeos',
     info: 'Creación de experiencias digitales para clientes en Portugal, Italia, Francia y Alemania, adaptando el producto a contextos y necesidades locales.',
-    url: '/iberdrola'
+    url: '/case-studies/iberdrola'
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const projectsData = [
     tags: ['Automoción', 'Startup', 'APP, Web & CarDrive'],
     title: 'Mejora de flujos y propuestas como Product Designer',
     info: 'Durante mi etapa en RoadStr ayudé a mejorar el flujo de trabajo del equipo de diseño y propuse nuevas funcionalidades para la app en iOS, Android y Carplay.',
-    url: '/roadstr'
+    url: '/case-studies/roadstr'
   },
   {
     id: 3,
@@ -33,6 +33,6 @@ export const projectsData = [
     tags: ['Música/Entretenimiento', 'Startup', 'APP'],
     title: 'Rediseño completo de la app para artistas y fans',
     info: 'Rediseñé la aplicación completa de Sesh (UX/UI & Design System), enfocada en conectar artistas y fans. Desde la experiencia de usuario hasta el diseño visual y el sistema de diseño en Figma.',
-    url: '/sesh'
+    url: '/case-studies/sesh'
   }
 ];
