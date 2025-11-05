@@ -7,7 +7,7 @@ import bgComida from '../../assets/img/bg/bgComida.webp';
 import bgIberdrola2 from '../../assets/img/bg/bgIberdrola2.webp';
 import bgSergio2 from '../../assets/img/bg/bgSergio2.webp';
 
-import Banner from "../../components/Home/Banner";
+import Banner from "../../components/Banner";
 import RelatedProjects from "../../components/RelatedProjects";
 import WorkTogether from "../../components/WorkTogether";
 
@@ -110,12 +110,12 @@ function Iberrola() {
                     <span className="text-highlight text-[--color-text-base]">Países distintos</span>
                     <p className="text-description mt-2">Francia, Alemania, Italia y Portugal</p>
                 </div>
-                 <div className="w-[360px] border-l-2 pl-8">
+                <div className="w-[360px] border-l-2 pl-8">
                     <p className="text-7xl mb-4 text-[--color-accent-primary]">4</p>
                     <span className="text-highlight text-[--color-text-base]">Productos clave rediseñados</span>
                     <p className="text-description mt-2">(App Recarga Pública · Mis Gestiones Online · Smart Mobility Empresas · Área Cliente)</p>
                 </div>
-                 <div className="w-[360px] border-l-2 pl-8">
+                <div className="w-[360px] border-l-2 pl-8">
                     <p className="text-7xl mb-4 text-[--color-accent-primary]">6</p>
                     <span className="text-highlight text-[--color-text-base]">Equipos implicados</span>
                     <p className="text-description mt-2">Diseñadores, producto, negocio y desarrollo en distintos países</p>
