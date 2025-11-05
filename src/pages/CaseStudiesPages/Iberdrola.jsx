@@ -1,5 +1,5 @@
 import bgMolino from "../../assets/img/bg/bgMolinos.webp";
-import LogoGaraje from "../../assets/img/logos/LogoGaraje.webp";
+import LogoGaraje from "../../assets/img/logos/LogoGaraje.svg";
 import LogoIberdrola from "../../assets/img/logos/LogoIberdrola.webp";
 
 import bgCastillo from '../../assets/img/bg/bgCastillo.webp';

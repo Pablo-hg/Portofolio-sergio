@@ -1,6 +1,6 @@
 
 const Footer = () => (
-  <footer>
+  <footer className="container">
     <div className="text-left">
       <span className="name">Sergio DM</span>
       <nav className="flex flex-wrap gap-8 mt-6 items-center text-[#0A1200]">

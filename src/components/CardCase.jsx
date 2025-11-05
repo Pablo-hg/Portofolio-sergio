@@ -26,7 +26,7 @@ export default function CardInfo({
             </div>
           ))}
         </div>
-        <h3 className="card-title mb-3 text-[--color-text-heading-strong]">{title}</h3>
+        <h3 className="card-title mb-3 text-textColor-heading-strong">{title}</h3>
         <p className="text-description mb-8">{info}</p>
         <div className="flex">
           <Button className="btn-Secondary" href={url} txt="Ver proyecto" />

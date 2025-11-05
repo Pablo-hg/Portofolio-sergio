@@ -16,12 +16,12 @@ export default function Reviews() {
     );
 
   return (
-    <section className="pb-40 pt-52 flex reviews justify-between">
+    <section className="container py-24 mt-14 flex justify-between">
       <div className="title text-left">
-        <h2 className="mb-3 text-[--color-text-heading-strong]">
+        <h2 className="mb-3 text-textColor-heading-strong">
           👉 Qué opina la gente con la que he trabajado.
         </h2>
-        <p className="text-paragraph text-[--color-text-description]">
+        <p className="text-paragraph">
           Perspectivas sinceras de quienes han trabajado conmigo en distintos proyectos.
         </p>
       </div>
@@ -33,7 +33,7 @@ export default function Reviews() {
             style={{ transform: `translateX(-${current * 450}px)` }}
           >
             {reviewsData.map((review, index) => (
-              <div key={index} className="bg-[--color-bg-surface]">
+              <div key={index} className="bg-bgColor-surface">
                 <TestimonialCard {...review} />
               </div>
             ))}
@@ -63,7 +63,7 @@ export default function Reviews() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`h-2 w-2 rounded-full transition-all duration-300 bg-[--color-accent-primary] ${current === index ? ". w-4" : "opacity-20"
+                className={`h-2 w-2 rounded-full transition-all duration-300 bg-accentColor-primary ${current === index ? ". w-4" : "opacity-20"
                   }`}
               ></button>
             ))}

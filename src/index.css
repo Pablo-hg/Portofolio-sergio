@@ -27,66 +27,6 @@
   src: url(../assets/fonts/Inter/Inter_18pt-Medium.ttf);
 }
 
-:root {
-  /* === color / bg === */
-  --color-bg-base: #ffffff;
-  --color-bg-surface: #f9f9f9;
-  --color-bg-overlay: rgba(255 255 255 / 0.9);
-  /* ≈ #FFFFFFE6 */
-  --color-bg-neutral-light: #f3f4f6;
-
-  /* === color / bg / header === */
-  --color-bg-header: #f5f7fa;
-  --color-bg-primary: #f5f7fa;
-  --color-bg-green: #e7fcc5;
-  --color-bg-blue: #deedff;
-  --color-bg-grey: #f5f6f7;
-
-  /* === color / text === */
-  --color-text-base: #1a1a1a;
-  --color-text-heading-strong: #2c2c2c;
-  --color-text-heading-subtle: #3c4043;
-  --color-text-body: #1a1a1a;
-  --color-text-description: #5f6368;
-  --color-text-muted: #6c6c6c;
-  --color-text-inverse: #ffffff;
-  --color-text-link: #1a1a1a;
-  --color-text-link-hover: #000000;
-
-  /* === color / accent === */
-  --color-accent-primary: #c14d36;
-  --color-accent-primary-hover: #a93f2d;
-  --color-accent-secondary: #2c2c2c;
-  --color-accent-neutral: #ededed;
-
-  /* === color / border === */
-  --color-border-main: #e2e2e2;
-  --color-border-default: #e5e5e5;
-  --color-border-hover: #f35b1c;
-  --color-border-muted: #f3f4f6;
-
-  /* === color / state === */
-  --color-state-success: #4ade80;
-  --color-state-error: #ef4444;
-  --color-state-info: #3b82f6;
-
-  /* === Body === */
-  --font-body-paragraph: 18px/150% 'Inter', sans-serif;
-  --font-body-highlight: 18px/150% 'Inter-semibold', sans-serif;
-  --font-body-description: 16px/150% 'Inter', sans-serif;
-  --font-body-highlight-small: 16px 'Inter-semibold', sans-serif;
-  --font-body-muted: 12px/ 'Inter-medium', sans-serif;
-  --font-body-small: 14px/150% 'Inter', sans-serif;
-
-  /* === UI === */
-  --font-ui-buttons: 16px/120% 'Inter-semibold', sans-serif;
-  --font-ui-tags: 14px/120% 'Inter', sans-serif;
-
-  /* === Link === */
-  --font-link-cta: 100 16px 'Inter', sans-serif;
-  --font-link-cta-hover: 16px 'Inter-semibold', sans-serif;
-}
-
 /* HEADER */
 h1,
 h2,
@@ -98,8 +38,8 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 110%;
+  font-size: 62px;
+  line-height: normal;
 }
 
 h2 {
@@ -117,27 +57,63 @@ h4 {
   line-height: auto;
 }
 
-/* === BODY === */
-.text-paragraph {
-  font: var(--font-body-paragraph);
+h5 {
+  font-size: 24px;
+  line-height: normal;
 }
 
-.text-highlight {
-  font: var(--font-body-highlight);
+@layer base {
+
+  /* === BODY === */
+  p {
+    font: var(--font-body-paragraph);
+    color: var(--color-text-description);
+  }
+
+  .text-paragraph {
+    font: var(--font-body-paragraph);
+  }
+
+  .text-highlight {
+    font: var(--font-body-highlight);
+  }
+
+  .text-description {
+    font: var(--font-body-description);
+    color: var(--color-text-description);
+  }
+
+  .text-highlight-small {
+    font: var(--font-body-highlight-small);
+  }
+
+  .text-muted {
+    font: var(--font-body-muted);
+  }
+
+  /* === UI === */
+  .text-button {
+    font: var(--font-ui-buttons);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--color-text-inverse);
+  }
+
+
+  /* === LINKS === */
+  .text-cta {
+    font: var(--font-link-cta);
+    color: var(--color-text-link);
+    text-decoration: none;
+  }
+
+  .text-cta:hover {
+    font: var(--font-link-cta-hover);
+    color: var(--color-text-link-hover);
+  }
 }
 
-.text-description {
-  font: var(--font-body-description);
-  color: var(--color-text-description);
-}
 
-.text-highlight-small {
-  font: var(--font-body-highlight-small);
-}
-
-.text-muted {
-  font: var(--font-body-muted);
-}
 
 /* === UI === */
 .text-button {
@@ -165,23 +141,22 @@ body {
   background-color: var(--color-bg-base);
 }
 
-#root {
-  max-width: 1184px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 /* -----------------------------HEADER-------------------------------------- */
 header {
-  background-color: #deedff7d;;
-  border-radius: 16px;
   color: var(--color-text-link);
-  border: 1px solid white;
 }
 
-header nav {
-  max-width: 826px;
-  width: -webkit-fill-available;
+.container,
+footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1184px !important;
+  }
 }
 
 header select.lang {
@@ -197,14 +172,15 @@ header nav a {
 
 header .name {
   color: var(--color-text-heading-subtle);
-  font-family: Ubuntu-medium;
-  font-size: 24px;
+  font-family: Ubuntu-medium !important;
+  font-size: 24px !important;
   line-height: 150%;
 }
 
 header nav a:hover {
   border-color: var(--color-border-hover);
   color: var(--color-text-link-hover);
+  font: var(--font-link-cta-hover);
 }
 
 /* -----------------------------HEADER-------------------------------------- */
@@ -269,19 +245,20 @@ footer .more {
   top: 16px;
   left: 23px;
 }
+
 /* -----------------------------BOTONES-------------------------------------- */
 @keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-up {
-    animation: fade-up 0.8s ease-out forwards;
+  animation: fade-up 0.8s ease-out forwards;
 }

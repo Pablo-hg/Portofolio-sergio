@@ -1,21 +1,19 @@
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
-    
+
     return (
-         <header className={`backdrop-blur-lg sticky top-4 z-50 header px-24 py-4`}>
-            <div className="flex items-center justify-between">
-                <nav className="flex items-center justify-between text-description">
-                    <NavLink className={"name"} to="/">Sergio DM</NavLink>
-                    <NavLink to="/case-studies">Case Studies</NavLink>
-                    <NavLink to="/about-me">Sobre Mi</NavLink>
-                    <a href="#cv">
-                        CV
-                    </a>
-                    <a href="#linkedin">
-                        Linkedin
-                    </a>
-                </nav>
+        <header className={`backdrop-blur-lg sticky left-0 top-0 z-50 py-4 w-full bg-white`}>
+            <nav className="flex items-center text-textColor-link-base justify-between container">
+                <NavLink className={"name"} to="/">Sergio DM</NavLink>
+                <NavLink to="/case-studies">Case Studies</NavLink>
+                <NavLink to="/about-me">Sobre Mi</NavLink>
+                <a href="#cv">
+                    CV
+                </a>
+                <a href="#linkedin">
+                    Linkedin
+                </a>
                 <div className="flex items-center">
                     <span className="mr-3">
                         <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +25,7 @@ export default function Header() {
                         <option>ENG</option>
                     </select>
                 </div>
-            </div>
+            </nav>
         </header>
     );
 }
