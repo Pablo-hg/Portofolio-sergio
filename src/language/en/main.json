@@ -1,4 +1,7 @@
 {
-  "case-studies": "Case Studies",
-  "about-me": "About me"
+    "case-studies": "Projects",
+    "about-me": "About me",
+    "made-in": "Made in Madrid",
+    "design-by": "Designed by Sergio Díaz",
+    "develop-by": "Developed by Pablo Horcajada"
 }

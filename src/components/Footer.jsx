@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
 
-const Footer = () => (
+export default function Footer () {
+  const { t } = useTranslation();
+  return (
   <footer className="container">
     <div className="text-left">
       <span className="name">Sergio DM</span>
@@ -21,13 +24,14 @@ const Footer = () => (
       </nav>
     </div>
     <div className="mx-auto flex justify-between items-center more text-highlight-small py-16">
-      <span>📍Realizado en Madrid</span>
+      <span>📍{t('made-in')}</span>
       <div className="text-right">
-        <span className="me-8">Diseñador por Sergio Díaz</span>
-        <span>Desarrollado por Pablo Horcajada</span>
+        <span className="me-8">{t('design-by')}</span>
+        <span>{t('develop-by')}</span>
       </div>
     </div>
   </footer>
-);
+  );
+}
 
-export default Footer;
+

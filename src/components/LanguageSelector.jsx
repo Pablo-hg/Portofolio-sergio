@@ -25,9 +25,9 @@ export default function LanguageSelector() {
   return (
     <div className="flex items-center gap-3">
       <button
-        onClick={() => changeLang("en")}
+        onClick={() => changeLang("es")}
         className={`p-1 rounded-full transition-transform duration-150 hover:scale-110 ${
-          currentLang === "en" ? "ring-2 ring-[--color-accent-primary]" : ""
+          currentLang === "es" ? "ring-2 ring-[--color-accent-primary]" : ""
         }`}
         aria-label="English"
       >
@@ -35,9 +35,9 @@ export default function LanguageSelector() {
       </button>
 
       <button
-        onClick={() => changeLang("es")}
+        onClick={() => changeLang("en")}
         className={`p-1 rounded-full transition-transform duration-150 hover:scale-110 ${
-          currentLang === "es" ? "ring-2 ring-[--color-accent-primary]" : ""
+          currentLang === "en" ? "ring-2 ring-[--color-accent-primary]" : ""
         }`}
         aria-label="Español"
       >
